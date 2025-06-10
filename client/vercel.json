@@ -1,3 +1,5 @@
-{
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
-}
+- name: Build with Jekyll
+  uses: actions/jekyll-build-pages@v1
+  with:
+    source: .         # change from 'docs' to '.' if your site is in root
+    destination: ./_site
